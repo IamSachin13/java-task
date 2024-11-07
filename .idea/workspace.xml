@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e9c1cea3-4d55-4344-994f-16712d06cb4a" name="Changes" comment="map function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/C1.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Multithread.executor": "Run",
+    "Application.modifier.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -63,6 +66,28 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ravis\Downloads\test-sorting\collectionF\src" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.modifier">
+    <configuration name="Multithread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Multithread" />
+      <module name="collectionF" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="modifier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="modifier" />
+      <module name="collectionF" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.modifier" />
+        <item itemvalue="Application.Multithread" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -97,7 +122,31 @@
       <option name="project" value="LOCAL" />
       <updated>1730871008157</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="map function">
+      <option name="closed" value="true" />
+      <created>1730887566387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730887566387</updated>
+    </task>
+    <task id="LOCAL-00005" summary="map function">
+      <option name="closed" value="true" />
+      <created>1730887646736</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730887646736</updated>
+    </task>
+    <task id="LOCAL-00006" summary="map function">
+      <option name="closed" value="true" />
+      <created>1730888307755</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730888307755</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

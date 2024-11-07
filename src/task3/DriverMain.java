@@ -1,6 +1,8 @@
+package task3;
+
 import java.util.Scanner;
 
-// Taxable Interface
+// task3.Taxable Interface
 interface Taxable {
     double salesTax = 0.07; // 7% Sales Tax
     double incomeTax = 0.105; // 10.5% Income Tax
@@ -8,7 +10,7 @@ interface Taxable {
     double calcTax();
 }
 
-// Employee Class implementing Taxable
+// task3.Employee Class implementing task3.Taxable
 class Employee implements Taxable {
     private int empId;
     private String name;
@@ -28,11 +30,11 @@ class Employee implements Taxable {
 
     @Override
     public String toString() {
-        return "Employee ID: " + empId + ", Name: " + name + ", Salary: " + salary;
+        return "task3.Employee ID: " + empId + ", Name: " + name + ", Salary: " + salary;
     }
 }
 
-// Product Class implementing Taxable
+// task3.Product Class implementing task3.Taxable
 class Product implements Taxable {
     private int pid;
     private double price;
@@ -54,18 +56,18 @@ class Product implements Taxable {
 
     @Override
     public String toString() {
-        return "Product ID: " + pid + ", Price: " + price + ", Quantity: " + quantity;
+        return "task3.Product ID: " + pid + ", Price: " + price + ", Quantity: " + quantity;
     }
 }
 
-// DriverMain Class
+// task3.DriverMain Class
 public class DriverMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Employee information
-        System.out.println("Enter Employee Information:");
-        System.out.print("Employee ID: ");
+        // task3.Employee information
+        System.out.println("Enter task3.Employee Information:");
+        System.out.print("task3.Employee ID: ");
         int empId = scanner.nextInt();
         scanner.nextLine();
         System.out.print("Name: ");
@@ -78,9 +80,9 @@ public class DriverMain {
         System.out.println("\n" + employee);
         System.out.printf("Income Tax on Yearly Salary: %.2f\n", employee.calcTax());
 
-        //  Product information
-        System.out.println("\nEnter Product Information:");
-        System.out.print("Product ID: ");
+        //  task3.Product information
+        System.out.println("\nEnter task3.Product Information:");
+        System.out.print("task3.Product ID: ");
         int pid = scanner.nextInt();
         System.out.print("Unit Price: ");
         double price = scanner.nextDouble();

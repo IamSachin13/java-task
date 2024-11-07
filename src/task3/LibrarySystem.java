@@ -1,7 +1,9 @@
+package task3;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-// Book Class
+// task3.Book Class
 class Book {
     private int bookID;
     private String title;
@@ -40,11 +42,11 @@ class Book {
 
     @Override
     public String toString() {
-        return "Book ID: " + bookID + ", Title: " + title + ", Author: " + author + ", Available: " + isAvailable;
+        return "task3.Book ID: " + bookID + ", Title: " + title + ", Author: " + author + ", Available: " + isAvailable;
     }
 }
 
-// Library Class
+// task3.Library Class
 class Library {
     private ArrayList<Book> books;
 
@@ -56,7 +58,7 @@ class Library {
     // Method to add a book
     public void addBook(Book book) {
         books.add(book);
-        System.out.println("Book added successfully.");
+        System.out.println("task3.Book added successfully.");
     }
 
     // Method to remove a book by ID
@@ -64,11 +66,11 @@ class Library {
         for (Book book : books) {
             if (book.getBookID() == bookID) {
                 books.remove(book);
-                System.out.println("Book removed successfully.");
+                System.out.println("task3.Book removed successfully.");
                 return true;
             }
         }
-        System.out.println("Book not found.");
+        System.out.println("task3.Book not found.");
         return false;
     }
 
@@ -102,10 +104,10 @@ public class LibrarySystem {
 
         // Menu
         while (true) {
-            System.out.println("\nLibrary System Menu:");
-            System.out.println("1. Add a Book");
-            System.out.println("2. Remove a Book");
-            System.out.println("3. Search for a Book");
+            System.out.println("\ntask3.Library System Menu:");
+            System.out.println("1. Add a task3.Book");
+            System.out.println("2. Remove a task3.Book");
+            System.out.println("3. Search for a task3.Book");
             System.out.println("4. Display All Books");
             System.out.println("5. Exit");
 
@@ -114,13 +116,13 @@ public class LibrarySystem {
 
             switch (choice) {
                 case 1:
-                    // Add a Book
-                    System.out.print("Enter Book ID: ");
+                    // Add a task3.Book
+                    System.out.print("Enter task3.Book ID: ");
                     int bookID = scanner.nextInt();
                     scanner.nextLine();  // Consume newline
-                    System.out.print("Enter Book Title: ");
+                    System.out.print("Enter task3.Book Title: ");
                     String title = scanner.nextLine();
-                    System.out.print("Enter Book Author: ");
+                    System.out.print("Enter task3.Book Author: ");
                     String author = scanner.nextLine();
 
                     Book newBook = new Book(bookID, title, author);
@@ -128,21 +130,21 @@ public class LibrarySystem {
                     break;
 
                 case 2:
-                    // Remove a Book
-                    System.out.print("Enter Book ID to remove: ");
+                    // Remove a task3.Book
+                    System.out.print("Enter task3.Book ID to remove: ");
                     int removeID = scanner.nextInt();
                     library.removeBook(removeID);
                     break;
 
                 case 3:
-                    // Search for a Book
-                    System.out.print("Enter Book ID to search: ");
+                    // Search for a task3.Book
+                    System.out.print("Enter task3.Book ID to search: ");
                     int searchID = scanner.nextInt();
                     Book foundBook = library.searchBook(searchID);
                     if (foundBook != null) {
-                        System.out.println("Book Found: " + foundBook);
+                        System.out.println("task3.Book Found: " + foundBook);
                     } else {
-                        System.out.println("Book not found.");
+                        System.out.println("task3.Book not found.");
                     }
                     break;
 
@@ -153,7 +155,7 @@ public class LibrarySystem {
 
                 case 5:
                     // Exit
-                    System.out.println("Exiting Library System. Goodbye!");
+                    System.out.println("Exiting task3.Library System. Goodbye!");
                     scanner.close();
                     return;
 
